@@ -37,8 +37,8 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
 
   return (
     <div className="flex h-full">
-      <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2 ">
-        <Box>
+      <div className="hidden md:flex flex-col gap-y-2 bg-[#090909] h-full w-[300px] px-2 ">
+        <Box className="border-b-[1px] border-neutral-800">
           <div className="flex flex-col gap-y-4 p-4 ">
             {routes.map((route) => (
               <SideBarRoutes key={route.label} {...route} />
@@ -49,9 +49,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
           <Library />
         </Box>
       </div>
-      <main className="h-full flex-1 overflow-y-auto py-2 pr-2">
-        {children}
-      </main>
+      <main className="h-full flex-1 overflow-y-auto">{children}</main>
     </div>
   );
 };

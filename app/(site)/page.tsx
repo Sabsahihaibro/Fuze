@@ -1,17 +1,23 @@
+import getSongs from "@/actions/getSongs";
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
 import React from "react";
 
-export default function page() {
+export const revalidate = 0;
+
+export default async function page() {
+  const songs = await getSongs();
+
   return (
     <div
       className="
-    bg-neutral-900
-    w-full
-    h-full
-    rounded-lg
-    overflow-hidden
-    overflow-y-auto
+      border-l-[1px]
+    border-neutral-800
+    bg-[#090909]
+      w-full
+      h-full
+      overflow-hidden
+      overflow-y-auto
   "
     >
       <Header>
