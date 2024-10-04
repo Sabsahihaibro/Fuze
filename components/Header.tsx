@@ -41,8 +41,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         `
         h-fit
         bg-gradient-to-b
-        from-indigo-600
-        p-2
+        from-emerald-800 
+        p-4
         `,
         className
       )}
