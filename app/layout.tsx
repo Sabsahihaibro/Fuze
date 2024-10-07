@@ -12,7 +12,7 @@ import getSongsByUserId from "@/actions/getSongsByUserId";
 const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fuze",
+  title: "Resono",
   description: "Listen to music",
 };
 

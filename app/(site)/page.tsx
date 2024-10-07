@@ -51,7 +51,7 @@ export default async function page() {
           </div>
         </div>
       </Header>
-      <div className="mt-2 mb-7 px-6">
+      <div className="mt-2 mb-7 px-4">
         <div className="flex justify-between items-center">
           <h1 className="text-white text-2xl font-semibold">Newest Songs</h1>
         </div>
