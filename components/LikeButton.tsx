@@ -31,7 +31,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({ songId }) => {
       const { data, error } = await supabaseClient
         .from("liked_songs")
         .select("*")
-        .eq("user_id", user.Id)
+        .eq("user_id", user.id)
         .eq("song_id", songId)
         .single();
 
